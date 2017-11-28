@@ -6,6 +6,10 @@
 
 - PHP >= 7.0
 
+# Function List
+
+- 匯出 Gitter Room Log: `php7 bin/export_gitter_log.php`
+
 # Usage
 
 ```
@@ -30,3 +34,7 @@ Please input log fetch end year (EX: 2017): 2017
 Please input Room ID: xxxxxxx
 Export done...%
 ```
+
+# CHANGELOG
+
+- 2017/11/28: Add Gitter export tool.
