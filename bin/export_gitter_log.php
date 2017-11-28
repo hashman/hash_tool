@@ -90,6 +90,6 @@ function export()
     foreach ($message_ary as $message) {
         file_put_contents($file_name, $message, FILE_APPEND);
     }
-    \cli\out("%GExport done...%n");
+    \cli\out("%GExport done, export to {$file_name}...%n");
     exit;
 }
