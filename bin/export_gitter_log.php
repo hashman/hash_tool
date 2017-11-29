@@ -86,6 +86,15 @@ function export()
             $message['text']);
     }
 
+    if (count($message_ary) == 0) {
+        \cli\out("%GNotthing to export...%n");
+        exit;
+    }
+
+    if (file_exists($file_name)) {
+        \cli\line("%GDelete exist file...%n");
+        unlink($file_name);
+    }
     ksort($message_ary);
     foreach ($message_ary as $message) {
         file_put_contents($file_name, $message, FILE_APPEND);
